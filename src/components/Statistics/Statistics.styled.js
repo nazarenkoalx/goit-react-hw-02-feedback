@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const StatsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 20px 60px;
+  gap: 10px;
 `;

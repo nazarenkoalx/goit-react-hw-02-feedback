@@ -1,5 +1,6 @@
 import { Notification } from 'components/Notification/Notification';
 import PropTypes from 'prop-types';
+import { StatsWrapper } from './Statistics.styled';
 
 export const Statistics = ({
   good,
@@ -11,14 +12,13 @@ export const Statistics = ({
   return (
     <div>
       {total ? (
-        <div>
-          <p>Statistic</p>
+        <StatsWrapper>
           <span>Good: {good}</span>
           <span>Neutral: {neutral}</span>
           <span>Bad: {bad}</span>
           <span>Total: {total}</span>
           <span>Positive feedback: {positivePercentage}%</span>
-        </div>
+        </StatsWrapper>
       ) : (
         <Notification message="There is no feedback" />
       )}
